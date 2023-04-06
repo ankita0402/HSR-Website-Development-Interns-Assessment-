@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@575&display=swap" rel="stylesheet">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .body {
+            margin: 0;
+        }
+
+        /* Header styles */
+        header {
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+        }
+
+        .header-content {
+            text-align: center;
+
+
+
+        }
+
+        .header-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+
+
+        .logo img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-top: -16px;
+
+        }
+
+        @media(max-width:700px) {
+            .logo {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-top: 3px;
+            }
+
+            header {
+                height: 85vh;
+                width: 100%;
+                background-size: cover;
+                position: relative;
+                background-image: url(ak1.jpg);
+                margin-top: 5px;
+
+            }
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 48px;
+            text-align: center;
+            text-shadow: 2px 2px black;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        nav {
+
+            display: flex;
+            padding: 1% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            flex: 1;
+            text-align: right;
+
+
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+
+        .nav-links ul li a {
+            color: #8e8888;
+            text-decoration: none;
+            font-size: 20px;
+
+
+
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            /* content:'|';
+display:inline-block;
+color:#dddddd;
+vertical-align:middle; */
+
+        }
+
+        /* Mission statement styles */
+        .mission {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .mission h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .mission p {
+            font-size: 24px;
+            line-height: 1.5;
+        }
+
+        /* Team section styles */
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .team-member {
+            width: 300px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            font-size: 24px;
+            margin: 20px 0 10px;
+        }
+
+        .team-member p {
+            font-size: 18px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="HSR LOGO.jpg" class="logo">
+        <div class="nav-links" id="navLinks">
+            <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i></a>&nbsp;</li>
+                <li><a href="contact.html">contact </a>&nbsp;</li>
+            </ul>
+        </div>
+        <!-- <i class="fa fa-bars" onclick="showMenu()" ></i> -->
+    </nav>
+    <header style="background-image: url('abo.jpg');">
+        <div class="header-content">
+            <h1>About Us</h1>
+
+        </div>
+    </header>
+
+
+    <div class="mission">
+        <h2>Our Mission</h2>
+        <p>What started as an independent IT consultant with a passion for small businesses has grown into a team
+            dedicated to providing business owners with strategic tools and actionable insights. Now we are one of those
+            IT service providers who can analyze a business on a holistic level and understand the fundamental needs
+            that should guide key technology decisions and implement the right solution. From the first conversation to
+            deployment and ongoing support, we're there for every step of the way. We focus on dialogue and
+            collaboration and care about relationship building.</p>
+    </div>
+
+    <div class="team">
+        <div class="team-member">
+            <img src="team memeber1.jpg" alt="Team Member 1">
+            <h3>John Doe</h3>
+            <p>CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="team member2.jpg" alt="Team Member 2">
+            <h3>Jane Smith</h3>
+            <p>COO</p>
+        </div>
+        <div class="team-member">
+            <img src="team member 3.jpg" alt="Team Member 3">
+            <h3>Bob Johnson</h3>
+            <p>CFO</p>
+        </div>
+    </div>
+</body>
+
+</html>
